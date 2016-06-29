@@ -31,7 +31,6 @@
 </head>
 
 <body>
-
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
@@ -106,14 +105,69 @@
   <!--Email Modal -->
 	<div class="container">
 	  <div class="modal fade" id="emailModal" role="dialog">
-	    <div class="modal-dialog modal-lg">
+	    <div class="modal-dialog modal-md">
 	      <div class="modal-content">
 	        <div class="modal-header">
 	          <button type="button" class="close" data-dismiss="modal">&times;</button>
-	          <h4 class="modal-title">Send me an Email!</h4>
+	          <h4 class="modal-title">I'm glad to hear from you!</h4>
 	        </div>
 	        <div class="modal-body">
-	          <p>This is a large modal.</p>
+				<form id="contact-form" method="post" action="contact.php" role="form">
+                    <div class="messages"></div>
+                    <div class="controls">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_name">Firstname *</label>
+                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_lastname">Lastname *</label>
+                                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_email">Email *</label>
+                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_phone">Phone</label>
+                                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_message">Message *</label>
+                                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <input name= "sumbit" type="submit" class="btn btn-success btn-send" value="Send message">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="text-muted"><strong>*</strong> These fields are required.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
 	        </div>
 	        <div class="modal-footer">
 	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -193,19 +247,9 @@
         	<div class="row">
 	        	<div class="col-lg-6 col-sm-7">
 	        	<hr class="section-heading-spacer">
-	                    <div class="clearfix"></div>
+	               <div class="clearfix"></div>
 	                    <h2 class="section-heading">EXPERIENCE</h2>
-		                    <p>January 2016 – June 2016 Vantage PNI, Jr. Software Engineer</p>
-							<ul><li>Develop Oncomatic, a web-based Electronic Medical Record System</li>
-							<li>Manage Database for EMR</li>
-							<li>Change logs documentation for feature sets.</li></ul>
-							<p>May 2015 – December 2015 RedMorph Inc, Jr. Software Engineer</p>
-							<ul><li>Worked on Web Crawler Web Application using PHP with MySql</li>
-							<li>Manage Lamp Server for the Web Crawler</li></ul>
-							<p>July 2014 – April 2015 Lahar Embedded Systems, Jr. Software Engineer</p>
-							<ul><li>Assisted in the development of Lahar Payroll System on making government reports</li>
-							<li>Develop Recruitment Database that manages applicant’s information for job abroad.</li>
-							<li>Attended training every second and fourth Saturday of the month</li></ul>
+                        <p>Jozell have been involved in the development of web-based system for different industries and designing websites. She's an experienced web developer that has work in Windows and Linux platforms. Jozell is able to participate and contribute in all aspects of software development (requirements gathering, design, coding, testing, deployment, support)</p>
 				</div>
 				<div class="col-lg-4 col-sm-5">
 					<img class="img-exp" src="img/desktop-login.png" alt="">
@@ -288,7 +332,8 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
+    <script src="js/validator.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 
 </html>
