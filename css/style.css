@@ -159,6 +159,13 @@ ul, {
     width: auto;
     height: 350px;
 }
+.btn-send {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+}
+
 
 @media(max-width:1199px) {
     ul.banner-social-buttons {
