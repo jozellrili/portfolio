@@ -83,7 +83,7 @@
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
                             <li>
-                                <a href="#emailModal" data-toggle="modal" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Email</span></a>
+                                <a href="mailto:jozellrili@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Email</span></a>
                             </li> 
                             <li>
                                 <a href="https://github.com/jozellrili" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
@@ -321,7 +321,7 @@
                             <a href="#contact">Contact</a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted small">Copyright &copy; Jozell Mateo Rili 2016 All Rights Reserved</p>
+                    <p class="copyright text-muted small">Copyright &copy; Jozell Mateo Rili 2017 All Rights Reserved</p>
                 </div>
             </div>
         </div>
