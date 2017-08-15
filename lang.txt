@@ -1,0 +1,14 @@
+ajax - https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/AJAX_logo_by_gengns.svg/2000px-AJAX_logo_by_gengns.svg.png
+git - https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png
+svn - https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Subversion_Logo.svg/1280px-Subversion_Logo.svg.png
+jquery - http://precision-software.com/wp-content/uploads/2014/04/jQurery.gif
+js - https://camo.githubusercontent.com/eb464a60a4a47f8b600aa71bfbc6aff3fe5c5392/68747470733a2f2f7261772e6769746875622e636f6d2f766f6f646f6f74696b69676f642f6c6f676f2e6a732f6d61737465722f6a732e706e67
+php - http://php.net/manual/en/images/c0d23d2d6769e53e24a1b3136c064577-php_logo.png
+html - https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png
+photoshop - https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Adobe_Photoshop_CS6_icon.svg/2000px-Adobe_Photoshop_CS6_icon.svg.png
+centos - https://www.rosehosting.com/blog/wp-content/uploads/2016/04/centos_logo.png
+bootstrap - https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Boostrap_logo.svg/2000px-Boostrap_logo.svg.png
+wamp - https://upload.wikimedia.org/wikipedia/commons/f/f8/WampServer-logo.png
+xampp - https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Xampp_logo.svg/2000px-Xampp_logo.svg.png
+zend - https://framework.zend.com/images/logos/zf-logo-mark.png
+code igniter - https://programmerblog.net/wp-content/uploads/2016/12/codeigniter.jpg
