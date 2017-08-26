@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Portfolio: Jozell Rili</title>
+    <title>Jozell Rili | Web Developer</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -49,10 +49,10 @@
                 <a class="nav-link" href="#skills">Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#experience">Experience</a>
+                <a class="nav-link" href="#experience">Experience</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#contact">Contacts</a>
+                <a class="nav-link" href="#contact">Contacts</a>
               </li>
             </ul>
         </div>
@@ -93,15 +93,14 @@
 
     <!-- Page Content -->
 
-	<a  name="about"></a>
-    <div class="content-section-a">
-
+	<!-- <a  name="about"></a> -->
+    <div class="content-section-a" id="about">
         <div class="container">
             <div class="row">
-            	<div class="col-lg-5 col-lg-offset-2 col-sm-6">
+            	<div class="col-lg-5 col-lg-offset-2 col-sm-5">
                     <img id = "img-about" class="img-responsive" src="img/phone_photo.png" alt="">
                 </div>
-                <div class="col-lg-5 col-sm-6">
+                <div class="col-lg-5 col-sm-7">
                     <hr class="section-heading-spacer-left">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Who is Jozell Mateo Rili?</h2>
@@ -116,12 +115,12 @@
     </div>
     <!-- /.content-section-a -->
 
-    <a name="skills"></a>
-    <div class="content-section-b">
+    <!-- <a name="skills"></a> -->
+    <div class="content-section-b" id="skills">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="text-center">Skills</h1>
+                    <h1 class="text-center">SKILLS</h1>
                     <hr class="section-heading-spacer">
                     <ul class="lang-list">
                         <li>
@@ -203,8 +202,8 @@
     </div>
     <!-- /.content-section-b -->
 
-    <a name="experience"></a>
-    <div class="content-section-a">
+    <!-- <a name="experience"></a> -->
+    <div class="content-section-a" id="experience">
         <div class="container">
         	<div class="row">
             <div class="col-lg-6 col-sm-7">
@@ -212,21 +211,20 @@
                    <div class="clearfix"></div>
                         <h2 class="section-heading">EXPERIENCE</h2>
                         <p>Jozell have been involved in the development of web-based system for different industries and designing websites. She's an experienced web developer that has work in Windows and Linux platforms. Jozell is able to participate and contribute in all aspects of software development (requirements gathering, design, coding, testing, deployment, support)</p>
-                </div>
-                <div class="col-lg-4 col-sm-5">
+            </div>
+            <div class="col-lg-4 col-sm-5">
                     <img class="img-exp" src="img/desktop-login.png" alt="">
-                </div>
+            </div>
 	        	</div>
             </div>
-
-        </div>
         <!-- /.container -->
+        </div>
     </div>
     <!-- /.content-section-a -->
 
     <div class="content-section-b">
         <div class="container">
-            <h1 class="text-center">Companies</h1>
+            <h1 class="text-center">COMPANIES</h1>
             <hr class="section-heading-spacer">
             <div class="row">
                 <div class="col-lg-12">
@@ -259,8 +257,8 @@
     </div>
     <!-- /.content-section-b -->
 
-	<a  name="contact"></a>
-    <div class="banner">
+	<!-- <a  name="contact"></a> -->
+    <div class="banner" id="contact">
         <div class="container">
 
             <div class="row">
@@ -294,23 +292,23 @@
                 <div class="col-lg-12">
                     <ul class="li-inline">
                         <li>
-                            <a href="#">Home</a>
+                            <a class="footLink" href="#home">Home</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#about">About</a>
+                            <a class="footLink" href="#about">About</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#skills">Skills</a>
+                            <a class="footLink" href="#skills">Skills</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#experience">Experience</a>
+                            <a class="footLink" href="#experience">Experience</a>
                              <li class="footer-menu-divider">&sdot;</li>                   </li>
 
                         <li>
-                            <a href="#contact">Contact</a>
+                            <a class="footLink" href="#contact">Contact</a>
                         </li>
                     </ul>
                     <p class="copyright text-muted small">Copyright &copy; Jozell Mateo Rili 2017 All Rights Reserved</p>
@@ -403,25 +401,27 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+    <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+
     <script src="js/validator.js"></script>
     <script src="js/contact.js"></script>
     <script src="js/check_inputs.js"></script>
 
     <script>
-        $(function() {
-            function form_submit() {
-                    document.getElementById("contact-form").submit();
-            }
+        (function($) {
 
             function onNavClick() {
-                var parent = $(this).parent();    
-                $('body').animate({ scrollTop: parent.position().top}, 1000);
+                var href = $(this).attr('href');
+                var toFocus = $('div'+ href);
+                $('body').animate({ scrollTop: toFocus.offset().top-50}, 1000);
             }  
 
             $(document).ready(function() {
-               $('.nav-link').on('click', onNavClick);
+                console.log('click')
+                $('.nav-link, .footLink').on('click', onNavClick);
+
             });
-        });
+        })(jQuery);
 
     </script>
 </body>
